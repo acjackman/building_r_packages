@@ -8,14 +8,15 @@ Description: Analyze data from the US National Highway Traffic Safety
     suffered in motor vehicle traffic crashes.
 Depends:
     R (>= 3.3.1)
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
 Imports: dplyr,
     maps,
     readr,
-    tidyr
+    tidyr,
+    magrittr
 Suggests:
     knitr,
     testthat

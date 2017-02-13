@@ -8,6 +8,8 @@ fars_map_state(state.num, year)
 }
 \arguments{
 \item{state.num}{state number in the}
+
+\item{year}{data year to create a map for}
 }
 \description{
 Plot all accidents for a single year on a map.

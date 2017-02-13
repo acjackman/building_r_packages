@@ -1,3 +1,7 @@
+t# Call to globalVariables to appease R CHECK
+if(getRversion() >= "2.15.1") utils::globalVariables(c(
+    "MONTH", "LATITUDE", "LONGITUD", "STATE", "year", "n"))
+
 #' Read raw Fatality Analysis Reporting System File
 #'
 #' Read a single year of accident data into an R \code{data_frame}. Format a
@@ -42,6 +46,7 @@ fars_read <- function(filename) {
 #'
 #' @return The default filename as a string.
 #'
+#' @export
 #' @examples
 #' make_filename(2013)
 #' make_filename(2014L)
@@ -119,6 +124,7 @@ fars_summarize_years <- function(years) {
 #' Plot all accidents for a single year on a map.
 #'
 #' @param state.num state number in the
+#' @param year data year to create a map for
 #'
 #' @examples
 #' \dontrun{
