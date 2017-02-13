@@ -1,6 +1,6 @@
 # FARs Analysis
 
-This package deals provides some simple analytics of the FARs data.
+This package deals provides some simple analytics of the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
 
 ## Installation
 
