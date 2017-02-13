@@ -68,6 +68,8 @@ make_filename <- function(year) {
 #' }
 #'
 #' @importFrom dplyr mutate select
+#' @importFrom magrittr %>%
+#'
 #' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -98,8 +100,9 @@ fars_read_years <- function(years) {
 #' fars_summarize_years(c(2013, 2014, 2015))
 #' }
 #'
-#' @importFrom dplyr bid_rows group_by summarize
-#' @importFrom tidyr spread`
+#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom magrittr %>%
+#' @importFrom tidyr spread
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -123,8 +126,8 @@ fars_summarize_years <- function(years) {
 #' }
 #'
 #' @importFrom dplyr filter
-#' @importFrom maps map
 #' @importFrom graphics points
+#' @importFrom maps map
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
