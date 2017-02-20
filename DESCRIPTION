@@ -1,6 +1,6 @@
 Package: farrr
 Title: Analysis of Fatality Analysis Reporting System data
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Adam", "Jackman", email = "adam@acjackman.com", role = c("aut", "cre"))
 Description: Analyze data from the US National Highway Traffic Safety
     Administration's Fatality Analysis Reporting System, which is a nationwide
@@ -21,4 +21,4 @@ Suggests:
     knitr,
     testthat,
     rmarkdown
-VignetteBuilder: knitr
+VignetteBuilder: rmarkdown

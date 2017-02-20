@@ -9,4 +9,27 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-It's cool. You should figure it out. Read the docs.
+The `farrr` package allows you to easily analyze data from the US National Highway
+Traffic Safety Administration's Fatality Analysis Reporting System, which is a
+nationwide census providing the American public yearly data regarding fatal
+injuries suffered in motor vehicle traffic crashes.
+
+
+`farrr` works with data downloaded directly from the FAR system, to use it change directory to the folder with downloaded data
+Example data is included for 2013, 2014, and 2015 in the `extdata` folder installed with `farrr`. To change directory to the example data folder use the command included below.
+
+```r
+setwd(system.file("extdata", package = "farrr"))
+```
+
+Load the `farrr` package with the `library` command
+
+```r
+library("farrr")
+```
+
+You can summarize the number of fatalities per moth for selected years by passing a vector to the `fars_summarize_years` function.
+
+```r
+fars_summarize_years(c(2013, 2014, 2015))
+```
